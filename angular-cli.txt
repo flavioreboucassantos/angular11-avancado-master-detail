@@ -1,0 +1,19 @@
+npm --version
+npm install -g @angular/cli@latest
+npm install # download das dependências
+
+ng new finansys --routing --skip-tests
+cd finansys
+
+npm i --save bootstrap@4.1.3 jquery@3.3.1 
+npm i --save angular-imask@4.1.0
+npm i --save currency-formatter@1.5.3
+npm i --save moment
+npm i --save toastr@2.1.4
+npm i --save primeng@10.0.0 --force
+npm i --save primeicons@4.0.0
+npm i --save chart.js@2.7.3
+npm i --save angular-in-memory-web-api@0.11.0
+
+
+
