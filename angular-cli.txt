@@ -18,4 +18,5 @@ npm i --save angular-in-memory-web-api@0.11.0
 
 ng g m pages/categories --routing # generates module categories adding routing inside folder pages/categories
 ng g c pages/categories/category-list # generates component category-list inside module categories, folder pages/categories/category-list
+ng g s pages/categories/shared/category # generates service category inside folder pages/categories/shared
 
