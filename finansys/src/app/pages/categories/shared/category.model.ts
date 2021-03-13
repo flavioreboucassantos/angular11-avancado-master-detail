@@ -8,9 +8,4 @@ export class Category {
 	) {
 		
 	}
-
-
-	static fromJson(jsonData: any): Category {
-		return Object.assign(new Category(), jsonData);
-	}
 }
