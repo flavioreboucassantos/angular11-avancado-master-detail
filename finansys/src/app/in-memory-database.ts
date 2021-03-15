@@ -6,11 +6,11 @@ import { Entry } from "./pages/entries/shared/entry.model";
 export class InMemoryDatabase implements InMemoryDbService {
 	createDb() {
 		const categories: Category[] = [
-			{ id: 1, name: 'Moradia', description: 'Pagamentos de Contas da Casa' },
-			{ id: 2, name: 'Saúde', description: 'Plano de Saúde e Remédios' },
-			{ id: 3, name: 'Lazer', description: 'Cinema, parques, praia, etc' },
-			{ id: 4, name: 'Salário', description: 'Recebimento de Salário' },
-			{ id: 5, name: 'Freelas', description: 'Trabalhos como freelancer' }
+			{ id: 1, name: 'Moradia', description: 'Pagamentos de Contas da Casa' } as Category,
+			{ id: 2, name: 'Saúde', description: 'Plano de Saúde e Remédios' } as Category,
+			{ id: 3, name: 'Lazer', description: 'Cinema, parques, praia, etc' } as Category,
+			{ id: 4, name: 'Salário', description: 'Recebimento de Salário' } as Category,
+			{ id: 5, name: 'Freelas', description: 'Trabalhos como freelancer' } as Category
 		];
 
 		const entries: Entry[] = [
