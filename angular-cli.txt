@@ -19,5 +19,5 @@ npm i --save angular-in-memory-web-api@0.11.0
 ng g m pages/categories --routing # generates module categories adding submodule routing, inside folder pages/categories
 ng g m core # generates module core inside folder core
 ng g c pages/categories/category-list # generates component category-list inside module categories, folder pages/categories/category-list
+ng g c shared/components/form-field-error --inline-template # generates component form-field-error inside module shared with inline template, folder shared/components/form-field-error
 ng g s pages/categories/shared/category # generates service category inside folder pages/categories/shared
-
