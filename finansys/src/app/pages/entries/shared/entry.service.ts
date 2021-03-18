@@ -50,8 +50,8 @@ export class EntryService extends BaseResourceService<Entry> {
 			const entryDate = moment(entry.date, "DD/MM/YYYY");
 			const monthMatches = entryDate.month() + 1 == month;
 			const yearMatches = entryDate.year() == year;
-
-			if (monthMatches && yearMatches) return entry;
+			
+			return monthMatches && yearMatches;
 		})
 	}
 
