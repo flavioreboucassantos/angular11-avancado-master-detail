@@ -46,7 +46,7 @@ export class ReportsComponent implements OnInit {
 	}
 
 
-	generateReports() {		
+	generateReports() {
 		const month = this.month.nativeElement.value;
 		const year = this.year.nativeElement.value;
 
@@ -101,7 +101,7 @@ export class ReportsComponent implements OnInit {
 				// total is index 0, entry is index 1, so do it starts with 0
 				const totalAmount = filteredEntries.reduce(
 					(total, entry) => total + currencyFormatter.unformat(entry.amount, { code: 'BRL' }), 0
-				)				
+				)
 
 				chartData.push({
 					categoryName: category.name,
@@ -115,7 +115,7 @@ export class ReportsComponent implements OnInit {
 			datasets: [{
 				label: title,
 				backgroundColor: color,
-				data: chartData.map(item => item.totalAmount)				
+				data: chartData.map(item => item.totalAmount)
 			}]
 		}
 	}
