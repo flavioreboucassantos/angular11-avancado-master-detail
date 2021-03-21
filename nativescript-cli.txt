@@ -1,0 +1,15 @@
+npm install -g nativescript # instala o NativeScript Cli
+
+emulator -list-avds
+emulator -avd Pixel_3a_API_30_x86
+
+tns create task_manager_rapido --template angular # cria projeto task_manager_rapido com o template do Angular
+
+tns devices android --available-devices # busca dispositivos emuladores de android
+tns run android # compila o projeto, gera o build e roda no emulador android
+tns run android --device emulator-5554 # especifica o device
+tns run android --clean # rebuild and restart
+
+tns resources generate icons ../app_img.jpg # gera os icones do app com a img escolhida
+tns resources generate splashes ../app_img.jpg --background "#354B72" # gera a imagem de fundo com a img escolhida e define a cor de fundo
+rm -rf plataforms/android # remove o build do projeto
